@@ -1,0 +1,282 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    outline:none;
+}
+
+/*
+
+# Mobile
+only screen and (min-width: 480px)
+
+# Tablet
+only screen and (min-width: 768px) 
+
+# Desktop
+only screen and (min-width: 992px)
+
+# Huge
+only screen and (min-width: 1280px) 
+
+*/
+
+
+/*  Loader */
+
+#loader-holder {
+    background-color:#333;
+    z-index:100;
+    min-width:calc(100vh - 0);
+    position:fixed;
+    bottom:0;
+    left:0;
+    top:0;
+    right:0;
+}
+
+#loader-holder #loader1  {
+    width:150px;
+    margin: 200px auto;
+}
+
+#loader-holder #loader1 img {
+    border-radius:50%;
+}
+
+
+
+/* Date displaying */
+
+#date-displayer {
+    width:100%;
+    background-color:#000;
+    color:#FFF;
+    height:20px;
+    box-shadow:0px 0px 20px #333;
+    overflow:hidden;
+    text-align:center;
+    border-bottom:1px solid #333;
+}
+
+#date-displayer #date {
+    margin-right:5px;
+    float:right;
+    width:100%;
+}
+
+
+
+/* Start First */
+
+.first {
+    background-color:#000;
+}
+
+.first #logo {
+    margin-top:10px;
+}
+
+.first #logo h4 {
+    color:#FFF;
+    float:left;
+    font-weight:bold;
+}
+
+.first #logo img {
+    border-radius:50%;
+    height:50px;
+} 
+
+.first #logo input {
+    float:right;
+    border:none;
+    border-radius:50px;
+    padding:5px 20px;
+    margin-bottom:10px;
+}
+
+/* End first */
+
+
+
+
+
+/* Start Navbar */
+nav {
+    background-color:#222F7B;
+    color:#FFF;
+    width:100%;
+    overflow:hidden;    
+}
+
+nav li {
+    float:left;
+    list-style:none;
+    padding:10px 2px;
+    cursor:pointer;
+    text-align:center;
+    transition:all .2s linear;
+    font-weight:bold;
+    border:1px solid rgba(204, 204, 204, 0.16);
+    border-top:none;
+    border-bottom:none;
+}
+
+nav li:hover {
+    background-color:#000;
+}
+
+nav li:first-of-type {
+    margin-left:50px;
+}
+
+@media (max-width:990px) {
+    nav li:first-of-type {
+        margin-left:0px;
+    }
+}
+
+
+#nav2-button {
+    color:#FFF;
+    overflow:hidden;
+    float:right;
+    text-align:center;  
+    width:12%;
+    font-size:18px;
+    cursor:pointer;  
+    display:none;
+}
+
+@media (max-width:767px) {
+ #nav2-button {
+     display:block;
+ }
+} 
+
+#nav2 {
+    background-color:#222F7B;
+    color:#FFF;
+    list-style:none;
+    text-align:center;
+    display:none;
+}
+
+#nav2 li {
+    padding:10px 0;
+    cursor:pointer;
+    transition:all .2s linear;
+    font-weight:bold;
+}
+
+#nav2 li:hover {
+    background-color:#000;
+}
+
+/* End navbar */
+
+
+
+/* Start Slider */
+
+.slider-holder {
+    background-color:#000;
+    height:500px;
+    width:100%;
+    overflow:hidden;
+}
+
+.slider {
+    border:1px solid #000;
+    width:80%;
+    height:450px;
+    margin:20px auto;
+    overflow:hidden;
+    background-color:#fff;
+}
+
+.slider section {
+    display:none;
+    width:100%;
+    height:100%;
+}
+
+.slider section:first-of-type {
+    display:block;
+    background:url('../images/house1.jpg') center center no-repeat;
+    background-size:cover;
+}
+
+.slider section:nth-of-type(2) {
+    background:url('../images/house2.jpg') center center no-repeat;
+    background-size:cover;
+}
+
+.slider section:nth-of-type(3) {
+    background:url('../images/house3.jpg') center center no-repeat;
+    background-size:cover;
+}
+
+.slider section:last-of-type {
+    background:url('../images/house4.jpg') center center no-repeat;
+    background-size:cover;
+}
+
+
+/* End Slider */
+
+/* Start Logos */
+#logos {
+    float:right;
+    border-left:2px solid #ccc;
+    border-bottom:2px solid #ccc;
+    border-bottom-left-radius: 50px;
+    overflow:hidden;
+}
+
+#logos img:last-of-type {
+    margin-top:-15px;
+}
+
+/* End Logos */
+
+
+/* Start Footer */
+
+footer {
+
+    width:100%;
+    background-color:#333;
+    color:#FFF;
+    padding:15px;
+    box-shadow: 0px 0px 20px #333;
+    overflow: hidden;
+}
+
+footer section {
+    float:right;
+    width:45%;
+}
+
+footer section a {
+    float:right;
+    margin-right:15px;
+    color:#FFF;
+    transition:all .2s linear;
+    margin-left:-8px;
+}
+
+footer section a:hover {
+    color:#AAA;
+}
+
+footer p {
+    float:left;
+    width:45%;
+}
+
+
+
+
+/* End Footer */
